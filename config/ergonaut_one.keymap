@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define DEF 0
 #define LWR 1
@@ -16,8 +17,8 @@
         compatible = "zmk,conditional-layers";
 
         tri-layer {
-            if-layers = <2 3>;
-            then-layer = <5>;
+            if-layers = <2 0>;
+            then-layer = <3>;
         };
     };
 
@@ -26,28 +27,28 @@
 
         control_layer {
             bindings = <
-&kp ESCAPE         &kp LG(Q)  &kp LG(W)  &kp LG(E)     &kp LG(R)  &kp LG(T)  &kp LG(Y)       &trans     &mo 1         &kp LG(O)      &trans  &trans
-&mt LCTRL LG(TAB)  &kp LG(A)  &kp LG(S)  &kp LG(D)     &kp LG(F)  &kp LG(G)  &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT      &trans  &trans
-&kp LEFT_SHIFT     &kp LG(Z)  &kp LG(X)  &kp LG(C)     &kp LG(V)  &kp LG(B)  &kp LG(N)       &kp LG(M)  &kp LC(LEFT)  &kp LC(RIGHT)  &trans  &trans
-                                         &kp LEFT_ALT  &trans     &mo 1      &kp RETURN      &trans     &trans
+&kp ESCAPE         &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)  &kp LG(Y)       &trans        &mo 1         &kp LG(O)      &trans            &trans
+&mt LCTRL LG(TAB)  &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)  &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT      &trans            &trans
+&kp LEFT_SHIFT     &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &kp LG(N)       &kp LG(M)     &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP_ARROW)  &trans
+                                         &mkp LCLK  &mkp RCLK  &mo 1      &kp RETURN      &kp LEFT_ALT  &trans
             >;
         };
 
         default_layer {
             bindings = <
-&mo 0                 &kp Q  &kp W  &kp E         &kp R          &kp T        &kp Y      &kp U           &kp I      &kp O    &kp P     &kp LBKT
-&mt LCTRL TAB         &kp A  &kp S  &kp D         &kp F          &kp G        &kp H      &kp J           &kp K      &kp L    &kp SEMI  &kp SQT
-&mt LEFT_SHIFT MINUS  &kp Z  &kp X  &kp C         &kp V          &kp B        &kp N      &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                                    &kp LEFT_ALT  &kp BACKSPACE  &lt 2 SPACE  &kp ENTER  &mt RSHFT BSPC  &lt 0 DEL
+&mo 0                 &kp Q  &kp W  &kp E         &kp R          &kp T        &kp Y               &kp U           &kp I      &kp O    &kp P     &kp LBKT
+&mt LCTRL TAB         &kp A  &kp S  &kp D         &kp F          &kp G        &kp H               &kp J           &kp K      &kp L    &kp SEMI  &kp SQT
+&mt LEFT_SHIFT MINUS  &kp Z  &kp X  &kp C         &kp V          &kp B        &kp N               &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
+                                    &kp LEFT_ALT  &kp BACKSPACE  &lt 2 SPACE  &mt LEFT_GUI ENTER  &mt RSHFT BSPC  &lt 0 DEL
             >;
         };
 
         lower_layer {
             bindings = <
-&mt LGUI F1     &kp F2    &kp F3  &kp F4    &kp F5    &kp F6     &kp F7     &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&mt LCTRL PLUS  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-&kp MINUS       &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp EQUAL
-                                  &trans    &trans    &trans     &trans     &trans    &trans
+&mt LGUI F1  &kp F2    &kp F3  &kp F4    &kp F5    &kp F6     &kp F7     &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
+&kp TILDE    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp UNDER
+&kp GRAVE    &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp EQUAL
+                               &trans    &trans    &trans     &kp MINUS  &kp PLUS  &trans
             >;
         };
 
