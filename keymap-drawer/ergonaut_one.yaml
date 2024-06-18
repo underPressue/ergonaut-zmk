@@ -8,7 +8,7 @@ layers:
   - Gui+ T
   - Gui+ Y
   - {t: ▽, type: trans}
-  - default
+  - {t: default, h: toggle}
   - Gui+ O
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -38,12 +38,12 @@ layers:
   - {t: ▽, type: trans}
   - Left Click
   - Right Click
-  - default
+  - {t: default, h: toggle}
   - RETURN
   - LEFT ALT
   - Gui+ H
   default:
-  - control
+  - {t: control, h: toggle}
   - Q
   - W
   - E
@@ -51,7 +51,7 @@ layers:
   - T
   - Y
   - U
-  - {t: I, type: held}
+  - I
   - O
   - P
   - '['
@@ -94,7 +94,7 @@ layers:
   - F6
   - F7
   - F8
-  - {t: F9, type: held}
+  - F9
   - F10
   - F11
   - F12
@@ -137,7 +137,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - VOLUME UP
@@ -180,7 +180,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - Boot
