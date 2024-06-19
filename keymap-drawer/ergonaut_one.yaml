@@ -1,49 +1,6 @@
 layers:
-  control:
-  - ESCAPE
-  - Gui+ Q
-  - Gui+ W
-  - Gui+ E
-  - Gui+ R
-  - Gui+ T
-  - Gui+ Y
-  - {t: ▽, type: trans}
-  - {t: default, h: toggle}
-  - Gui+ O
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: Gui+ ↹, h: Ctrl}
-  - Gui+ A
-  - Gui+ S
-  - Gui+ D
-  - Gui+ F
-  - Gui+ G
-  - LEFT ARROW
-  - ↓
-  - UP ARROW
-  - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - Gui+ Z
-  - Gui+ X
-  - Gui+ C
-  - Gui+ V
-  - Gui+ B
-  - Gui+ N
-  - Gui+ M
-  - Ctl+ ←
-  - Ctl+ →
-  - Ctl+ UP ARROW
-  - {t: ▽, type: trans}
-  - Left Click
-  - Right Click
-  - {t: default, h: toggle}
-  - RETURN
-  - LEFT ALT
-  - Gui+ H
   default:
-  - {t: control, h: toggle}
+  - ESCAPE
   - Q
   - W
   - E
@@ -67,7 +24,7 @@ layers:
   - L
   - ;
   - ''''
-  - {t: '-', h: LEFT SHIFT}
+  - {t: CAPSLOCK, h: LEFT SHIFT}
   - Z
   - X
   - C
@@ -80,11 +37,11 @@ layers:
   - /
   - ']'
   - LEFT ALT
-  - {t: BACKSPACE, h: control}
-  - {t: ␣, h: lower}
-  - {t: ENTER, h: LEFT GUI}
-  - LEFT ALT
-  - {t: \, h: media}
+  - media
+  - {t: ␣, h: LEFT GUI}
+  - RETURN
+  - lower
+  - BACKSPACE
   lower:
   - {t: F1, h: Gui}
   - F2
@@ -124,10 +81,10 @@ layers:
   - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - '-'
-  - +
   - {t: ▽, type: trans}
+  - '-'
+  - {type: held}
+  - +
   media:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -147,10 +104,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ←
+  - UP ARROW
+  - ↓
+  - →
   - {t: ▽, type: trans}
   - MUTE
   - {t: ▽, type: trans}
@@ -166,11 +123,11 @@ layers:
   - {t: ▽, type: trans}
   - VOLUME DOWN
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   adjust:
   - Boot
   - ''
@@ -209,8 +166,8 @@ layers:
   - ''
   - Reset
   - {t: ▽, type: trans}
-  - ''
   - {type: held}
-  - ''
   - {t: ▽, type: trans}
+  - ''
   - {type: held}
+  - {t: ▽, type: trans}
