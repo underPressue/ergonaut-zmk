@@ -105,8 +105,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ←
+  - DOWN ARROW
   - UP ARROW
-  - ↓
   - →
   - {t: ▽, type: trans}
   - MUTE
