@@ -1,6 +1,6 @@
 layers:
   default:
-  - ESCAPE
+  - ↹
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - '['
-  - {t: ↹, h: Ctrl}
+  - CAPSLOCK
   - A
   - S
   - D
@@ -24,7 +24,7 @@ layers:
   - L
   - ;
   - ''''
-  - {t: CAPSLOCK, h: LEFT SHIFT}
+  - LEFT SHIFT
   - Z
   - X
   - C
@@ -36,12 +36,12 @@ layers:
   - .
   - /
   - ']'
-  - BACKSPACE
+  - {t: ESCAPE, h: media}
+  - {t: BACKSPACE, h: Ctrl}
   - {t: ␣, h: LEFT GUI}
-  - media
-  - lower
   - {t: ENTER, h: LEFT ALT}
-  - ESCAPE
+  - lower
+  - \
   lower:
   - {t: F1, h: Gui}
   - F2
@@ -82,8 +82,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - '-'
+  - {type: held}
   - +
   media:
   - PRINTSCREEN
@@ -122,9 +122,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -165,9 +165,9 @@ layers:
   - ''
   - ''
   - Reset
+  - {type: held}
+  - ''
   - {t: ▽, type: trans}
   - ''
   - {type: held}
-  - {type: held}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
