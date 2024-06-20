@@ -21,33 +21,44 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        bootloader {
+            bindings = <&bootloader>;
+            key-positions = <0 1 10 11>;
+            layers = <0>;
+            require-prior-idle-ms = <900>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R                &kp T               &kp Y               &kp U  &kp I          &kp O    &kp P     &kp LBKT
-&kp CAPSLOCK    &kp A  &kp S  &kp D         &kp F                &kp G               &kp H               &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V                &kp B               &kp N               &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
-                              &lt 2 ESCAPE  &mt LCTRL BACKSPACE  &mt LEFT_GUI SPACE  &mt LEFT_ALT ENTER  &mo 1  &kp BACKSLASH
+&kp ESCAPE               &kp Q  &kp W  &kp E         &kp R         &kp T        &kp Y        &kp U              &kp I          &kp O    &kp P     &kp LBKT
+&mt LEFT_CONTROL TAB     &kp A  &kp S  &kp D         &kp F         &kp G        &kp H        &kp J              &kp K          &kp L    &kp SEMI  &kp SQT
+&mt LEFT_SHIFT CAPSLOCK  &kp Z  &kp X  &kp C         &kp V         &kp B        &kp N        &kp M              &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_BRACKET
+                                       &kp LEFT_ALT  &kp LEFT_GUI  &lt 2 ENTER  &lt 1 SPACE  &kp LA(BACKSPACE)  &kp BACKSLASH
             >;
         };
 
         lower_layer {
             bindings = <
-&mt LGUI F1  &kp F2    &kp F3  &kp F4    &kp F5    &kp F6     &kp F7     &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&kp TILDE    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp UNDER
-&kp GRAVE    &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp EQUAL
-                               &trans    &trans    &trans     &kp MINUS  &trans    &kp PLUS
+&mt LGUI F1  &kp F2    &kp F3  &kp F4    &kp F5    &kp F6     &kp F7     &kp F8     &kp F9    &kp F10   &kp F11   &kp F12
+&kp TILDE    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &kp UNDER
+&kp GRAVE    &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7     &kp N8    &kp N9    &kp N0    &kp EQUAL
+                               &trans    &trans    &trans     &trans     &kp MINUS  &kp PLUS
             >;
         };
 
-        media {
+        rise_layer {
             bindings = <
-&kp PRINTSCREEN  &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans        &trans     &trans  &trans
-&trans           &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans           &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans        &trans     &trans  &trans
-                                 &trans  &trans  &trans  &trans    &trans          &trans
+&kp PRINTSCREEN  &trans  &trans  &trans  &trans  &trans  &trans         &trans          &trans        &trans     &trans  &trans
+&trans           &trans  &trans  &trans  &trans  &trans  &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans           &trans  &trans  &trans  &trans  &trans  &trans         &trans          &trans        &trans     &trans  &trans
+                                 &trans  &trans  &trans  &kp BACKSPACE  &trans          &trans
             >;
         };
 
