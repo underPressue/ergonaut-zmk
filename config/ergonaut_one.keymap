@@ -15,7 +15,7 @@
          tapping-term-ms = <250>;
 };
 
-{
+\ {
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
