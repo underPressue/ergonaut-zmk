@@ -24,7 +24,7 @@ layers:
   - {t: L, h: LEFT CONTROL}
   - {t: ;, h: LEFT SHIFT}
   - ''''
-  - BACKSPACE
+  - Left Click
   - Z
   - X
   - C
@@ -36,7 +36,7 @@ layers:
   - .
   - /
   - ']'
-  - Left Click
+  - BACKSPACE
   - ␣
   - lower
   - rise
@@ -67,7 +67,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Right Click
   - '6'
   - '7'
   - '8'
@@ -79,7 +79,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Right Click
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -104,11 +104,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - LEFT ARROW
   - DOWN ARROW
   - UP ARROW
-  - →
+  - RIGHT ARROW
+  - {t: ▽, type: trans}
   - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -179,5 +179,5 @@ combos:
   k: PRINTSCREEN
 - p: [37, 40]
   k: CAPSLOCK
-- p: [36, 37]
+- p: [24, 25]
   k: Middle Click
