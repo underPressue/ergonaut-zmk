@@ -13,7 +13,7 @@ layers:
   - P
   - '['
   - ↹
-  - A
+  - {t: A, h: LEFT SHIFT}
   - {t: S, h: Ctrl}
   - {t: D, h: LEFT ALT}
   - {t: F, h: LEFT GUI}
@@ -22,9 +22,9 @@ layers:
   - {t: J, h: LEFT GUI}
   - {t: K, h: LEFT ALT}
   - {t: L, h: LEFT CONTROL}
-  - ;
+  - {t: ;, h: LEFT SHIFT}
   - ''''
-  - LEFT SHIFT
+  - BACKSPACE
   - Z
   - X
   - C
@@ -35,57 +35,100 @@ layers:
   - ','
   - .
   - /
-  - {t: ']', h: RIGHT SHIFT}
-  - LEFT ALT
+  - ']'
+  - Left Click
   - ␣
+  - lower
   - rise
-  - {t: BACKSPACE, h: lower}
   - ENTER
   - \
   lower:
-  - ''
+  - '`'
   - '!'
   - '@'
   - '#'
   - $
   - '%'
-  - ^
-  - '&'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '*'
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '~'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '{'
-  - '}'
-  - ''
-  - ''
-  - ''
-  - ''
-  - '`'
   - '1'
   - '2'
   - '3'
   - '4'
   - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Right Click
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  rise:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ^
+  - '&'
+  - '*'
   - (
   - )
   - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - UP ARROW
+  - →
   - +
-  - '='
-  - ''
-  - ''
-  - ''
-  - _
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '['
   - ']'
-  rise:
+  - '{'
+  - '}'
+  - KP EQUAL
+  - {t: ▽, type: trans}
+  - _
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  control:
   - F1
   - F2
   - F3
@@ -100,14 +143,14 @@ layers:
   - F12
   - ''
   - ''
+  - {t: BT DISC, h: '3'}
+  - {t: BT DISC, h: '2'}
+  - {t: BT DISC, h: '1'}
+  - {t: BT DISC, h: '0'}
   - ''
   - ''
   - ''
   - ''
-  - ←
-  - DOWN ARROW
-  - UP ARROW
-  - →
   - ''
   - ''
   - BT CLR
@@ -125,7 +168,7 @@ layers:
   - ''
   - ''
   - {type: held}
-  - ''
+  - {type: held}
   - ''
   - ''
 combos:
@@ -136,3 +179,5 @@ combos:
   k: PRINTSCREEN
 - p: [37, 40]
   k: CAPSLOCK
+- p: [36, 37]
+  k: Middle Click
