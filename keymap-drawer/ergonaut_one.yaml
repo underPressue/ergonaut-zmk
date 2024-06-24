@@ -12,19 +12,20 @@ layers:
   - O
   - P
   - '['
-  - ↹
-  - {t: A, h: LEFT SHIFT}
-  - {t: S, h: Ctrl}
+  - {t: ↹, h: LEFT CONTROL}
+  - A
+  - {t: S, h: LEFT SHIFT}
   - {t: D, h: LEFT ALT}
   - {t: F, h: LEFT GUI}
   - G
   - H
   - {t: J, h: LEFT GUI}
   - {t: K, h: LEFT ALT}
-  - {t: L, h: LEFT CONTROL}
-  - {t: ;, h: LEFT SHIFT}
+  - {t: L, h: LEFT SHIFT}
+  - ;
   - ''''
   - Left Click
+  - ']'
   - Z
   - X
   - C
@@ -35,8 +36,7 @@ layers:
   - ','
   - .
   - /
-  - ']'
-  - BACKSPACE
+  - Right Click
   - ␣
   - lower
   - rise
@@ -51,7 +51,7 @@ layers:
   - '%'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '*'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -67,7 +67,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Right Click
+  - ''
   - '6'
   - '7'
   - '8'
@@ -116,11 +116,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '['
   - ']'
   - '{'
   - '}'
+  - {t: ▽, type: trans}
   - KP EQUAL
   - {t: ▽, type: trans}
   - _
@@ -181,3 +181,5 @@ combos:
   k: CAPSLOCK
 - p: [24, 25]
   k: Middle Click
+- p: [21, 22]
+  k: BACKSPACE
