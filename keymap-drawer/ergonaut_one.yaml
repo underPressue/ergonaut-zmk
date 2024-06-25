@@ -12,8 +12,8 @@ layers:
   - O
   - P
   - '['
-  - {t: ↹, h: LEFT CONTROL}
-  - A
+  - ↹
+  - {t: A, h: Ctrl}
   - {t: S, h: LEFT SHIFT}
   - {t: D, h: LEFT ALT}
   - {t: F, h: LEFT GUI}
@@ -22,7 +22,7 @@ layers:
   - {t: J, h: LEFT GUI}
   - {t: K, h: LEFT ALT}
   - {t: L, h: LEFT SHIFT}
-  - ;
+  - {t: ;, h: Ctrl}
   - ''''
   - Left Click
   - ']'
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - Right Click
+  - {t: BACKSPACE, h: navigation}
   - ␣
   - lower
   - rise
@@ -67,7 +67,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - Right Click
   - '6'
   - '7'
   - '8'
@@ -80,7 +80,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - _
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -92,12 +92,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ^
-  - '&'
   - '*'
-  - (
-  - )
-  - '-'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -108,7 +108,7 @@ layers:
   - DOWN ARROW
   - UP ARROW
   - RIGHT ARROW
-  - {t: ▽, type: trans}
+  - '-'
   - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -120,14 +120,14 @@ layers:
   - ']'
   - '{'
   - '}'
-  - {t: ▽, type: trans}
   - KP EQUAL
+  - '?'
   - {t: ▽, type: trans}
   - _
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - (
+  - )
   control:
   - F1
   - F2
@@ -171,6 +171,49 @@ layers:
   - {type: held}
   - ''
   - ''
+  navigation:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+ UP ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+ H
+  - Ctl+ LEFT ARROW
+  - Ctl+ DOWN ARROW
+  - Ctl+ →
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [0, 1, 10, 11]
   k: Boot
@@ -182,4 +225,4 @@ combos:
 - p: [24, 25]
   k: Middle Click
 - p: [21, 22]
-  k: BACKSPACE
+  k: Alt+ BACKSPACE

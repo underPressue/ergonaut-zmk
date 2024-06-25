@@ -52,7 +52,7 @@
         };
 
         bacspace {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp LA(BACKSPACE)>;
             key-positions = <21 22>;
         };
     };
@@ -62,28 +62,28 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE            &kp Q              &kp W             &kp E           &kp R           &kp T  &kp Y  &kp U           &kp I           &kp O             &kp P          &kp LBKT
-&mt LEFT_CONTROL TAB  &kp A              &mt LEFT_SHIFT S  &mt LEFT_ALT D  &mt LEFT_GUI F  &kp G  &kp H  &mt LEFT_GUI J  &mt LEFT_ALT K  &mt LEFT_SHIFT L  &kp SEMICOLON  &kp SQT
-&mkp LCLK             &kp RIGHT_BRACKET  &kp Z             &kp X           &kp C           &kp V  &kp B  &kp N           &kp M           &kp COMMA         &kp DOT        &kp SLASH
-                                                           &mkp RCLK       &kp SPACE       &mo 1  &mo 2  &kp ENTER       &kp BACKSLASH
+&kp ESCAPE  &kp Q              &kp W             &kp E            &kp R           &kp T  &kp Y  &kp U           &kp I           &kp O             &kp P                &kp LBKT
+&kp TAB     &mt LCTRL A        &mt LEFT_SHIFT S  &mt LEFT_ALT D   &mt LEFT_GUI F  &kp G  &kp H  &mt LEFT_GUI J  &mt LEFT_ALT K  &mt LEFT_SHIFT L  &mt LCTRL SEMICOLON  &kp SQT
+&mkp LCLK   &kp RIGHT_BRACKET  &kp Z             &kp X            &kp C           &kp V  &kp B  &kp N           &kp M           &kp COMMA         &kp DOT              &kp SLASH
+                                                 &lt 4 BACKSPACE  &kp SPACE       &mo 1  &mo 2  &kp ENTER       &kp BACKSLASH
             >;
         };
 
         lower_layer {
             bindings = <
-&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans  &trans  &trans  &trans  &trans  &trans
-&kp TILDE  &kp NUMBER_1     &kp N2       &kp N3    &kp N4      &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
-&none      &kp N6           &kp N7       &kp N8    &kp N9      &kp N0       &trans  &trans  &trans  &trans  &trans  &trans
-                                         &trans    &trans      &trans       &trans  &trans  &trans
+&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR      &kp PERCENT  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TILDE  &kp NUMBER_1     &kp N2       &kp N3    &kp N4          &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
+&mkp RCLK  &kp N6           &kp N7       &kp N8    &kp N9          &kp N0       &trans  &trans  &trans  &trans  &trans  &trans
+                                         &trans    &kp UNDERSCORE  &trans       &trans  &trans  &trans
             >;
         };
 
         rise_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans          &trans  &kp CARET       &kp AMPERSAND   &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
-&trans  &trans  &trans  &trans  &trans          &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW       &trans                 &kp PLUS
-&trans  &trans  &trans  &trans  &trans          &trans  &kp LBKT        &kp RBKT        &kp LEFT_BRACE  &kp RIGHT_BRACE       &trans                 &kp KP_EQUAL
-                        &trans  &kp UNDERSCORE  &trans  &trans          &trans          &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans          &trans                &trans                 &trans           &kp CARET     &kp ASTERISK
+&trans  &trans  &trans  &trans  &trans          &trans  &kp LEFT_ARROW  &kp DOWN_ARROW        &kp UP_ARROW           &kp RIGHT_ARROW  &kp MINUS     &kp PLUS
+&trans  &trans  &trans  &trans  &trans          &trans  &kp LBKT        &kp RBKT              &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp KP_EQUAL  &kp QUESTION
+                        &trans  &kp UNDERSCORE  &trans  &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
         };
 
@@ -93,6 +93,15 @@
 &none       &none   &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0  &none   &none   &none   &none    &none    &none
 &bt BT_CLR  &none   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &none   &none   &none   &none    &none    &none
                                    &none          &none          &none          &none   &none   &none
+            >;
+        };
+
+        navigation {
+            bindings = <
+&trans     &trans              &trans              &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans              &kp LC(UP_ARROW)    &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(H)  &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(RIGHT)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                   &trans         &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
