@@ -12,9 +12,9 @@ layers:
   - O
   - P
   - '['
-  - ↹
-  - {t: A, h: LEFT SHIFT}
-  - {t: S, h: Ctrl}
+  - LEFT CONTROL
+  - A
+  - {t: LEFT SHIFT, h: Ctrl}
   - {t: D, h: LEFT ALT}
   - {t: F, h: LEFT GUI}
   - G
@@ -24,7 +24,7 @@ layers:
   - {t: L, h: LEFT CONTROL}
   - {t: ;, h: LEFT SHIFT}
   - ''''
-  - Left Click
+  - LEFT SHIFT
   - Z
   - X
   - C
@@ -36,8 +36,8 @@ layers:
   - .
   - /
   - ']'
-  - BACKSPACE
-  - ␣
+  - LEFT ALT
+  - LEFT GUI
   - lower
   - rise
   - ENTER
