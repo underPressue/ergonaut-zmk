@@ -1,6 +1,47 @@
 layers:
-  default: [ESCAPE, Q, W, E, R, T, Y, U, I, O, P, '[', LEFT CONTROL, A, S, D, F, G, H, J, K, L, ;, '''', LEFT SHIFT, Z, X, C, V, B, N, M, ',', ., /, ']', LEFT ALT,
-    LEFT GUI, ␣, rise, ENTER, \]
+  default:
+  - ESCAPE
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - LEFT CONTROL
+  - A
+  - S
+  - D
+  - {t: F, h: special}
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LEFT SHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ']'
+  - LEFT ALT
+  - LEFT GUI
+  - ␣
+  - rise
+  - ENTER
+  - \
   rise:
   - ↹
   - '!'
@@ -41,9 +82,52 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - _
-  - {type: held}
+  - {t: default, type: held}
   - (
   - )
+  special:
+  - Tab Right
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+ ↹
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BACKSPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ↹
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   control:
   - F1
   - F2
@@ -84,7 +168,7 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
 combos:
@@ -101,3 +185,5 @@ combos:
   k: Alt+ BACKSPACE
 - p: [22, 20, 21]
   k: Gui+ BACKSPACE
+- p: [34, 35]
+  k: {t: control, h: toggle}
