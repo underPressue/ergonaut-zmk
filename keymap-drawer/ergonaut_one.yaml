@@ -35,12 +35,12 @@ layers:
   - ','
   - .
   - /
-  - {t: ENTER, h: RIGHT SHIFT}
+  - RIGHT SHIFT
   - ↹
-  - LEFT GUI
+  - {t: ␣, h: LEFT GUI}
   - rise
-  - ␣
-  - LEFT ALT
+  - rise
+  - {t: ENTER, h: LEFT ALT}
   - \
   rise:
   - {t: ▽, type: trans}
@@ -52,9 +52,9 @@ layers:
   - ^
   - '&'
   - '*'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
+  - (
+  - )
+  - ']'
   - {t: ▽, type: trans}
   - '#'
   - $
@@ -65,7 +65,7 @@ layers:
   - DOWN ARROW
   - UP ARROW
   - RIGHT ARROW
-  - {t: ▽, type: trans}
+  - KP MINUS
   - +
   - {t: ▽, type: trans}
   - '%'
@@ -73,18 +73,18 @@ layers:
   - '1'
   - '2'
   - '3'
-  - '['
-  - ']'
-  - '{'
-  - '}'
+  - Home
+  - PAGE DOWN
+  - PAGE UP
+  - End
   - {t: ▽, type: trans}
   - KP EQUAL
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   - _
-  - (
-  - )
+  - {type: held}
+  - {t: ▽, type: trans}
+  - '{'
+  - '}'
   control:
   - F1
   - F2
