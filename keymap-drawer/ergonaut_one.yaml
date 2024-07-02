@@ -1,6 +1,6 @@
 layers:
   default:
-  - ESCAPE
+  - ↹
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - '['
-  - ↹
+  - LEFT CONTROL
   - A
   - S
   - D
@@ -24,7 +24,7 @@ layers:
   - L
   - ;
   - ''''
-  - LEFT CONTROL
+  - LEFT SHIFT
   - Z
   - X
   - C
@@ -35,15 +35,15 @@ layers:
   - ','
   - .
   - /
-  - ']'
-  - LEFT ALT
+  - {t: ']', h: RIGHT SHIFT}
+  - ESCAPE
   - LEFT GUI
   - ␣
-  - {t: ENTER, h: LEFT SHIFT}
-  - {t: rise, h: toggle}
+  - {t: ENTER, h: rise}
+  - LEFT ALT
   - \
   rise:
-  - ↹
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '7'
@@ -82,7 +82,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - _
-  - {t: default, h: toggle}
+  - {type: held}
   - (
   - )
   control:
