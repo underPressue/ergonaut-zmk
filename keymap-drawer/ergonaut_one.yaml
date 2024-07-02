@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - '['
-  - ↹
+  - LEFT CONTROL
   - A
   - S
   - D
@@ -24,7 +24,7 @@ layers:
   - L
   - ;
   - ''''
-  - LEFT CONTROL
+  - LEFT SHIFT
   - Z
   - X
   - C
@@ -35,15 +35,15 @@ layers:
   - ','
   - .
   - /
-  - ENTER
-  - LEFT SHIFT
+  - RIGHT SHIFT
+  - ↹
   - {t: ␣, h: LEFT GUI}
   - rise
   - rise
-  - {t: \, h: LEFT ALT}
-  - RIGHT SHIFT
+  - {t: ENTER, h: LEFT ALT}
+  - BACKSPACE
   rise:
-  - {t: ▽, type: trans}
+  - '`'
   - '!'
   - '@'
   - '7'
@@ -77,7 +77,7 @@ layers:
   - PAGE DOWN
   - PAGE UP
   - End
-  - {t: ▽, type: trans}
+  - \
   - KP EQUAL
   - {t: ▽, type: trans}
   - _
