@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - '['
-  - LEFT CONTROL
+  - ↹
   - A
   - S
   - D
@@ -24,7 +24,7 @@ layers:
   - L
   - ;
   - ''''
-  - LEFT SHIFT
+  - LEFT CONTROL
   - Z
   - X
   - C
@@ -35,13 +35,13 @@ layers:
   - ','
   - .
   - /
-  - RIGHT SHIFT
-  - ↹
+  - ENTER
+  - LEFT SHIFT
   - {t: ␣, h: LEFT GUI}
   - rise
   - rise
-  - {t: ENTER, h: LEFT ALT}
-  - \
+  - {t: \, h: LEFT ALT}
+  - RIGHT SHIFT
   rise:
   - {t: ▽, type: trans}
   - '!'
