@@ -1,6 +1,6 @@
 layers:
   default:
-  - ↹
+  - ESCAPE
   - Q
   - W
   - E
@@ -35,11 +35,11 @@ layers:
   - ','
   - .
   - /
-  - {t: ']', h: RIGHT SHIFT}
-  - ESCAPE
+  - {t: ENTER, h: RIGHT SHIFT}
+  - ↹
   - LEFT GUI
+  - rise
   - ␣
-  - {t: ENTER, h: rise}
   - LEFT ALT
   - \
   rise:
@@ -81,8 +81,8 @@ layers:
   - KP EQUAL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - _
   - {type: held}
+  - _
   - (
   - )
   control:
