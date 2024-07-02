@@ -45,16 +45,16 @@
 
         alt_backspace {
             bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <21 22>;
+            key-positions = <21 20>;
         };
 
         super_backspce {
             bindings = <&kp LG(BACKSPACE)>;
-            key-positions = <22 20 21>;
+            key-positions = <22 21>;
         };
 
         control_layer {
-            bindings = <&to 3>;
+            bindings = <&mo 2>;
             key-positions = <34 35>;
         };
     };
@@ -64,10 +64,10 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE        &kp Q  &kp W  &kp E         &kp R         &kp T      &kp Y  &kp U      &kp I          &kp O    &kp P          &kp LBKT
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D         &lt 2 F       &kp G      &kp H  &kp J      &kp K          &kp L    &kp SEMICOLON  &kp SQT
-&kp LEFT_SHIFT    &kp Z  &kp X  &kp C         &kp V         &kp B      &kp N  &kp M      &kp COMMA      &kp DOT  &kp FSLH       &kp RIGHT_BRACKET
-                                &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &mo 1  &kp ENTER  &kp BACKSLASH
+&kp ESCAPE        &kp Q  &kp W  &kp E         &kp R         &kp T      &kp Y                 &kp U  &kp I          &kp O    &kp P          &kp LBKT
+&kp TAB           &kp A  &kp S  &kp D         &kp F         &kp G      &kp H                 &kp J  &kp K          &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V         &kp B      &kp N                 &kp M  &kp COMMA      &kp DOT  &kp FSLH       &kp RIGHT_BRACKET
+                                &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &mt LEFT_SHIFT ENTER  &to 1  &kp BACKSLASH
             >;
         };
 
@@ -76,16 +76,7 @@
 &kp TAB  &kp EXCLAMATION  &kp AT_SIGN      &kp N7  &kp N8  &kp N9     &kp CARET         &kp AMPERSAND         &kp ASTERISK           &trans           &trans  &kp MINUS
 &trans   &kp HASH         &kp DOLLAR       &kp N4  &kp N5  &kp N6     &kp LEFT_ARROW    &kp DOWN_ARROW        &kp UP_ARROW           &kp RIGHT_ARROW  &trans  &kp PLUS
 &trans   &kp PERCENT      &kp KP_NUMBER_0  &kp N1  &kp N2  &kp N3     &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp LEFT_BRACE         &kp RIGHT_BRACE  &trans  &kp KP_EQUAL
-                                           &trans  &trans  &kp UNDER  &mo 0             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-            >;
-        };
-
-        special {
-            bindings = <
-&kp LC(TAB)  &trans  &trans  &trans  &trans  &trans   &trans  &trans         &trans  &trans  &trans  &trans
-&kp LG(TAB)  &trans  &trans  &trans  &trans  &trans   &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans   &trans  &trans         &trans  &trans  &trans  &trans
-                             &trans  &trans  &kp TAB  &trans  &trans         &trans
+                                           &trans  &trans  &kp UNDER  &to 0             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
         };
 

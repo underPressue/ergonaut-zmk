@@ -12,11 +12,11 @@ layers:
   - O
   - P
   - '['
-  - LEFT CONTROL
+  - ↹
   - A
   - S
   - D
-  - {t: F, h: special}
+  - F
   - G
   - H
   - J
@@ -24,7 +24,7 @@ layers:
   - L
   - ;
   - ''''
-  - LEFT SHIFT
+  - LEFT CONTROL
   - Z
   - X
   - C
@@ -39,8 +39,8 @@ layers:
   - LEFT ALT
   - LEFT GUI
   - ␣
-  - rise
-  - ENTER
+  - {t: ENTER, h: LEFT SHIFT}
+  - {t: rise, h: toggle}
   - \
   rise:
   - ↹
@@ -82,52 +82,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - _
-  - {t: default, type: held}
+  - {t: default, h: toggle}
   - (
   - )
-  special:
-  - Tab Right
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Gui+ ↹
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BACKSPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ↹
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   control:
   - F1
   - F2
@@ -163,8 +120,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - {type: held}
+  - {type: held}
   - ''
   - ''
   - ''
@@ -181,9 +138,9 @@ combos:
   k: CAPSLOCK
 - p: [19, 20]
   k: BACKSPACE
-- p: [21, 22]
+- p: [21, 20]
   k: Alt+ BACKSPACE
-- p: [22, 20, 21]
+- p: [22, 21]
   k: Gui+ BACKSPACE
 - p: [34, 35]
-  k: {t: control, h: toggle}
+  k: control
