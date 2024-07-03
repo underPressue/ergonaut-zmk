@@ -12,16 +12,16 @@ layers:
   - O
   - P
   - '['
-  - ↹
+  - {t: ↹, h: LEFT CONTROL}
   - A
-  - S
-  - D
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: LEFT GUI}
   - {t: F, h: rise}
   - G
   - H
   - {t: J, h: rise}
-  - K
-  - L
+  - {t: K, h: RIGHT GUI}
+  - {t: L, h: RIGHT ALT}
   - ;
   - ''''
   - LEFT SHIFT
