@@ -208,6 +208,7 @@ text.label, text.footer { stroke: black; }
 <g transform="translate(252, 91)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">F</text>
+<text x="0" y="24" class="key hold">rise</text>
 </g>
 <g transform="translate(308, 98)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -220,6 +221,7 @@ text.label, text.footer { stroke: black; }
 <g transform="translate(588, 91)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">J</text>
+<text x="0" y="24" class="key hold">rise</text>
 </g>
 <g transform="translate(644, 84)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -346,14 +348,24 @@ text.label, text.footer { stroke: black; }
 </text>
 </g>
 <g class="combo combopos-5">
-<rect rx="6" ry="6" x="714" y="85" width="28" height="26" class="combo"/>
-<text x="728" y="98" class="combo tap">
-<tspan x="728" dy="-0.6em" style="font-size: 78%">Gui+</tspan><tspan x="728" dy="1.2em" style="font-size: 78%">BACKSPACE</tspan>
+<path d="M644,89 l37,2" class="combo"/>
+<path d="M644,89 l-37,2" class="combo"/>
+<rect rx="6" ry="6" x="630" y="76" width="28" height="26" class="combo"/>
+<text x="644" y="89" class="combo tap">
+<tspan x="644" dy="-0.6em" style="font-size: 78%">Gui+</tspan><tspan x="644" dy="1.2em" style="font-size: 78%">BACKSPACE</tspan>
 </text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="770" y="148" width="28" height="26" class="combo"/>
 <text x="784" y="161" class="combo tap">control</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="714" y="85" width="28" height="26" class="combo"/>
+<text x="728" y="98" class="combo tap">ENTER</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="98" y="85" width="28" height="26" class="combo"/>
+<text x="112" y="98" class="combo tap">ESCAPE</text>
 </g>
 </g>
 </g>
@@ -424,9 +436,9 @@ text.label, text.footer { stroke: black; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">4</text>
 </g>
-<g transform="translate(252, 91)" class="key keypos-16">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">5</text>
+<g transform="translate(252, 91)" class="key held keypos-16">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<text x="0" y="0" class="key held tap">5</text>
 </g>
 <g transform="translate(308, 98)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -530,8 +542,9 @@ text.label, text.footer { stroke: black; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">_</text>
 </g>
-<g transform="translate(351, 224) rotate(30.0)" class="key held keypos-38">
-<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held"/>
+<g transform="translate(351, 224) rotate(30.0)" class="key trans keypos-38">
+<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key trans keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
@@ -566,14 +579,24 @@ text.label, text.footer { stroke: black; }
 </text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="714" y="85" width="28" height="26" class="combo"/>
-<text x="728" y="98" class="combo tap">
-<tspan x="728" dy="-0.6em" style="font-size: 78%">Gui+</tspan><tspan x="728" dy="1.2em" style="font-size: 78%">BACKSPACE</tspan>
+<path d="M644,89 l37,2" class="combo"/>
+<path d="M644,89 l-37,2" class="combo"/>
+<rect rx="6" ry="6" x="630" y="76" width="28" height="26" class="combo"/>
+<text x="644" y="89" class="combo tap">
+<tspan x="644" dy="-0.6em" style="font-size: 78%">Gui+</tspan><tspan x="644" dy="1.2em" style="font-size: 78%">BACKSPACE</tspan>
 </text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="770" y="148" width="28" height="26" class="combo"/>
 <text x="784" y="161" class="combo tap">control</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="714" y="85" width="28" height="26" class="combo"/>
+<text x="728" y="98" class="combo tap">ENTER</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="98" y="85" width="28" height="26" class="combo"/>
+<text x="112" y="98" class="combo tap">ESCAPE</text>
 </g>
 </g>
 </g>
@@ -770,14 +793,24 @@ text.label, text.footer { stroke: black; }
 </text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="714" y="85" width="28" height="26" class="combo"/>
-<text x="728" y="98" class="combo tap">
-<tspan x="728" dy="-0.6em" style="font-size: 78%">Gui+</tspan><tspan x="728" dy="1.2em" style="font-size: 78%">BACKSPACE</tspan>
+<path d="M644,89 l37,2" class="combo"/>
+<path d="M644,89 l-37,2" class="combo"/>
+<rect rx="6" ry="6" x="630" y="76" width="28" height="26" class="combo"/>
+<text x="644" y="89" class="combo tap">
+<tspan x="644" dy="-0.6em" style="font-size: 78%">Gui+</tspan><tspan x="644" dy="1.2em" style="font-size: 78%">BACKSPACE</tspan>
 </text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="770" y="148" width="28" height="26" class="combo"/>
 <text x="784" y="161" class="combo tap">control</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="714" y="85" width="28" height="26" class="combo"/>
+<text x="728" y="98" class="combo tap">ENTER</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="98" y="85" width="28" height="26" class="combo"/>
+<text x="112" y="98" class="combo tap">ESCAPE</text>
 </g>
 </g>
 </g>

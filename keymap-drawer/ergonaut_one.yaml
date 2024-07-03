@@ -16,10 +16,10 @@ layers:
   - A
   - S
   - D
-  - F
+  - {t: F, h: rise}
   - G
   - H
-  - J
+  - {t: J, h: rise}
   - K
   - L
   - ;
@@ -59,7 +59,7 @@ layers:
   - '#'
   - $
   - '4'
-  - '5'
+  - {t: '5', type: held}
   - '6'
   - LEFT ARROW
   - DOWN ARROW
@@ -81,7 +81,7 @@ layers:
   - KP EQUAL
   - {t: ▽, type: trans}
   - _
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '{'
   - '}'
@@ -140,7 +140,11 @@ combos:
   k: BACKSPACE
 - p: [21, 20]
   k: Alt+ BACKSPACE
-- p: [22, 21]
+- p: [21, 19, 20]
   k: Gui+ BACKSPACE
 - p: [34, 35]
   k: control
+- p: [22, 21]
+  k: ENTER
+- p: [13, 14]
+  k: ESCAPE
