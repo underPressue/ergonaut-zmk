@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - '['
-  - LEFT CONTROL
+  - ↹
   - A
   - S
   - D
@@ -36,7 +36,7 @@ layers:
   - .
   - /
   - RIGHT SHIFT
-  - ↹
+  - LEFT CONTROL
   - {t: ␣, h: LEFT GUI}
   - rise
   - rise
