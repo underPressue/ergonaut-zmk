@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - '['
-  - {t: ↹, h: LEFT CONTROL}
+  - ↹
   - A
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT GUI}
@@ -20,8 +20,8 @@ layers:
   - G
   - H
   - {t: J, h: rise}
-  - {t: K, h: RIGHT GUI}
-  - {t: L, h: RIGHT ALT}
+  - {t: K, h: LEFT GUI}
+  - {t: L, h: LEFT ALT}
   - ;
   - ''''
   - LEFT SHIFT
@@ -134,17 +134,19 @@ combos:
   l: [default]
 - p: [0, 24]
   k: PRINTSCREEN
-- p: [16, 15]
+- p: [19, 16]
   k: CAPSLOCK
 - p: [19, 20]
   k: BACKSPACE
-- p: [21, 20]
+- p: [21, 19]
   k: Alt+ BACKSPACE
 - p: [21, 19, 20]
   k: Gui+ BACKSPACE
 - p: [34, 35]
   k: control
-- p: [22, 21]
+- p: [21, 20]
   k: ENTER
-- p: [13, 14]
+- p: [14, 15]
   k: ESCAPE
+- p: [16, 15]
+  k: ␣
