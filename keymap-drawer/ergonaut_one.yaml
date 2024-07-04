@@ -24,7 +24,7 @@ layers:
   - {t: L, h: LEFT ALT}
   - ;
   - ''''
-  - LEFT SHIFT
+  - LEFT CONTROL
   - Z
   - X
   - C
@@ -35,12 +35,12 @@ layers:
   - ','
   - .
   - /
-  - RIGHT SHIFT
-  - LEFT CONTROL
-  - {t: ␣, h: LEFT GUI}
-  - rise
-  - rise
-  - {t: ENTER, h: LEFT ALT}
+  - ENTER
+  - LEFT GUI
+  - ␣
+  - LEFT SHIFT
+  - LEFT SHIFT
+  - LEFT ALT
   - BACKSPACE
   rise:
   - '`'
