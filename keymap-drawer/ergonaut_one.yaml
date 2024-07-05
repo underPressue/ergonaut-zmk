@@ -24,7 +24,7 @@ layers:
   - {t: L, h: LEFT ALT}
   - ;
   - ''''
-  - LEFT CONTROL
+  - LEFT SHIFT
   - Z
   - X
   - C
@@ -35,13 +35,13 @@ layers:
   - ','
   - .
   - /
-  - ENTER
+  - LEFT SHIFT
   - LEFT GUI
   - ␣
-  - LEFT SHIFT
-  - LEFT SHIFT
+  - LEFT CONTROL
+  - rise
+  - ENTER
   - LEFT ALT
-  - BACKSPACE
   rise:
   - '`'
   - '!'
@@ -116,17 +116,17 @@ layers:
   - BT 3
   - BT 2
   - BT 1
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
   - {type: held}
   - ''
   - ''
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
   - ''
 combos:
 - p: [0, 1, 10, 11]
@@ -142,11 +142,9 @@ combos:
   k: Alt+ BACKSPACE
 - p: [21, 19, 20]
   k: Gui+ BACKSPACE
-- p: [34, 35]
+- p: [40, 30]
   k: control
 - p: [21, 20]
   k: ENTER
 - p: [14, 15]
   k: ESCAPE
-- p: [16, 15]
-  k: ␣
