@@ -1,47 +1,6 @@
 layers:
-  default:
-  - ESCAPE
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '['
-  - ↹
-  - A
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LEFT GUI}
-  - {t: F, h: rise}
-  - G
-  - H
-  - {t: J, h: rise}
-  - {t: K, h: LEFT GUI}
-  - {t: L, h: LEFT ALT}
-  - ;
-  - ''''
-  - LEFT SHIFT
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - LEFT SHIFT
-  - LEFT CONTROL
-  - LEFT GUI
-  - ␣
-  - rise
-  - ENTER
-  - LEFT ALT
+  default: [↹, Q, W, E, R, T, Y, U, I, O, P, '[', LEFT CONTROL, A, S, D, F, G, H, J, K, L, ;, '''', LEFT SHIFT, Z, X, C, V, B, N, M, ',', ., /, LEFT SHIFT, LEFT ALT,
+    LEFT GUI, ␣, rise, BACKSPACE, ESCAPE]
   rise:
   - '`'
   - '!'
@@ -59,7 +18,7 @@ layers:
   - '#'
   - $
   - '4'
-  - {t: '5', type: held}
+  - '5'
   - '6'
   - LEFT ARROW
   - DOWN ARROW
@@ -80,24 +39,24 @@ layers:
   - \
   - KP EQUAL
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - _
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - '{'
   - '}'
   control:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
+  - {t: ▽, type: trans}
+  - BRIGHTNESS DEC
+  - BRIGHTNESS INC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PREVIOUS
+  - PLAY PAUSE
+  - NEXT
+  - VOLUME DOWN
+  - VOLUME UP
+  - MUTE
   - ''
   - ''
   - {t: BT DISC, h: '3'}
@@ -137,8 +96,6 @@ combos:
 - p: [19, 16]
   k: CAPSLOCK
 - p: [19, 20]
-  k: BACKSPACE
-- p: [21, 19]
   k: Alt+ BACKSPACE
 - p: [21, 19, 20]
   k: Gui+ BACKSPACE
