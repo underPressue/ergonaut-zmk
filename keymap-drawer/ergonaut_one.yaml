@@ -36,12 +36,12 @@ layers:
   - .
   - /
   - LEFT SHIFT
-  - {t: ESCAPE, h: LEFT ALT}
+  - LEFT ALT
   - LEFT GUI
   - ␣
   - {t: BACKSPACE, h: rise}
-  - {t: ENTER, h: LEFT GUI}
-  - LEFT ALT
+  - ENTER
+  - ESCAPE
   rise:
   - '`'
   - '!'
