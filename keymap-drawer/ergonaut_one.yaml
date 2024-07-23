@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - '['
+  - BACKSPACE
   - LEFT CONTROL
   - A
   - S
@@ -36,14 +36,14 @@ layers:
   - .
   - /
   - LEFT SHIFT
-  - LEFT ALT
+  - {t: ESCAPE, h: LEFT ALT}
   - LEFT GUI
   - ␣
-  - {t: BACKSPACE, h: rise}
-  - ENTER
-  - ESCAPE
+  - {t: ENTER, h: rise}
+  - '['
+  - ']'
   rise:
-  - '`'
+  - '~'
   - '!'
   - '@'
   - '7'
@@ -54,7 +54,7 @@ layers:
   - '*'
   - (
   - )
-  - ']'
+  - '`'
   - {t: ▽, type: trans}
   - '#'
   - $
@@ -83,8 +83,8 @@ layers:
   - {t: ▽, type: trans}
   - _
   - {type: held}
-  - '{'
-  - '}'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   control:
   - {t: ▽, type: trans}
   - BRIGHTNESS DEC
@@ -134,8 +134,6 @@ combos:
   l: [default]
 - p: [0, 24]
   k: PRINTSCREEN
-- p: [19, 16]
-  k: CAPSLOCK
 - p: [19, 20]
   k: Alt+ BACKSPACE
 - p: [21, 19, 20]
