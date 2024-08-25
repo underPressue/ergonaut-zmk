@@ -78,7 +78,7 @@ layers:
   - BT 3
   - BT 4
   - \
-  - {t: ▽, type: trans}
+  - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - _
