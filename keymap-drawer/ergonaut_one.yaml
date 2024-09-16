@@ -23,7 +23,7 @@ layers:
   - K
   - L
   - ;
-  - ⏎
+  - ''''
   - LEFT SHIFT
   - Z
   - X
@@ -35,11 +35,11 @@ layers:
   - ','
   - .
   - /
-  - LEFT SHIFT
+  - {t: ENTER, h: LEFT SHIFT}
   - LEFT ALT
   - LEFT GUI
   - ␣
-  - {t: '''', h: rise}
+  - rise
   - '['
   - ']'
   rise:
@@ -69,7 +69,7 @@ layers:
   - +
   - {t: ▽, type: trans}
   - '%'
-  - '~'
+  - KP 0
   - '1'
   - '2'
   - '3'
@@ -80,7 +80,7 @@ layers:
   - \
   - '|'
   - {t: ▽, type: trans}
-  - KP 0
+  - {t: ▽, type: trans}
   - _
   - {type: held}
   - {t: ▽, type: trans}
