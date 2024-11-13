@@ -24,7 +24,7 @@ layers:
   - DOWN ARROW
   - UP ARROW
   - RIGHT ARROW
-  - KP MINUS
+  - '-'
   - +
   - {t: ▽, type: trans}
   - '%'
@@ -103,3 +103,5 @@ combos:
   k: ENTER
 - p: [14, 15]
   k: ESCAPE
+- p: [16, 15]
+  k: {t: Meh+ Gui, h: sticky}
