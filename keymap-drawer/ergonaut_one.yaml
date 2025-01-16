@@ -46,9 +46,9 @@ layers:
   - '`'
   - '!'
   - '@'
-  - '7'
-  - '8'
-  - '9'
+  - '#'
+  - $
+  - '%'
   - ^
   - '&'
   - '*'
@@ -56,11 +56,11 @@ layers:
   - )
   - KP EQUAL
   - {t: ▽, type: trans}
-  - '#'
-  - $
+  - '1'
+  - '2'
+  - '3'
   - '4'
   - '5'
-  - '6'
   - LEFT ARROW
   - DOWN ARROW
   - UP ARROW
@@ -68,30 +68,30 @@ layers:
   - '-'
   - +
   - {t: ▽, type: trans}
-  - '%'
-  - KP 0
-  - '1'
-  - '2'
-  - '3'
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - ''
+  - ''
   - \
   - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - _
+  - {t: _, type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   control:
-  - {t: ▽, type: trans}
-  - BRIGHTNESS DEC
-  - BRIGHTNESS INC
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - PREVIOUS
   - PLAY PAUSE
   - NEXT
@@ -99,29 +99,29 @@ layers:
   - VOLUME UP
   - MUTE
   - ''
-  - ''
   - {t: BT DISC, h: '3'}
   - {t: BT DISC, h: '2'}
   - {t: BT DISC, h: '1'}
   - {t: BT DISC, h: '0'}
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BRIGHTNESS INC
   - BT CLR
   - ''
-  - BT 4
-  - BT 3
-  - BT 2
-  - BT 1
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - ''
   - ''
   - ''
   - ''
-  - ''
+  - BRIGHTNESS DEC
   - ''
   - ''
   - ''
@@ -135,9 +135,9 @@ combos:
 - p: [0, 24]
   k: PRINTSCREEN
 - p: [19, 20]
-  k: Alt+ BACKSPACE
+  k: Alt+BACKSPACE
 - p: [21, 19, 20]
-  k: Gui+ BACKSPACE
+  k: CAPSLOCK
 - p: [40, 30]
   k: control
 - p: [21, 20]
@@ -145,4 +145,4 @@ combos:
 - p: [14, 15]
   k: ESCAPE
 - p: [16, 15]
-  k: {t: Meh+ Gui, h: sticky}
+  k: {t: Meh+Gui, h: sticky}
