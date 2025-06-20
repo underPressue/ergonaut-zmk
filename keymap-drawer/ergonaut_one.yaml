@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: ergonaut_one}
 layers:
   default:
   - ↹
@@ -44,23 +45,23 @@ layers:
   - ']'
   rise:
   - '`'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - KP EQUAL
-  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
   - '4'
   - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '='
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
   - LEFT ARROW
   - DOWN ARROW
   - UP ARROW
@@ -68,11 +69,11 @@ layers:
   - '-'
   - +
   - {t: ▽, type: trans}
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
   - ''
   - ''
   - ''
@@ -129,12 +130,12 @@ layers:
   - {type: held}
   - ''
 combos:
-- p: [0, 1, 10, 11]
+- p: [0, 24, 5, 29]
   k: Boot
   l: [default]
 - p: [0, 24]
   k: PRINTSCREEN
-- p: [19, 20]
+- p: [11, 10]
   k: Alt+BACKSPACE
 - p: [21, 19, 20]
   k: CAPSLOCK
@@ -145,4 +146,8 @@ combos:
 - p: [14, 15]
   k: ESCAPE
 - p: [16, 15]
+  k: {t: Meh+Gui, h: sticky}
+- p: [9, 10, 11]
+  k: Gui+BACKSPACE
+- p: [19, 20]
   k: {t: Meh+Gui, h: sticky}
